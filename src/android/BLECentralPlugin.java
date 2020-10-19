@@ -14,6 +14,7 @@
 
 package com.megster.cordova.ble.central;
 
+import java.lang.reflect.Method;
 import android.Manifest;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -489,7 +490,7 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             callbackContext.error("Peripheral " + macAddress + " not found.");
         }
     }
-    
+
     private void queueCleanup(CallbackContext callbackContext, String macAddress) {
         Peripheral peripheral = peripherals.get(macAddress);
         if (peripheral != null) {
