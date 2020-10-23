@@ -1,3 +1,7 @@
+= 1.2.6 =
+Replaced Android scanner routine
+Added fine location to fix Android 10/11 scanning issues 
+
 = 1.2.5 =
 Add setPin method for Android #718 Thanks untilbit
 Give the user feedback after an MTU size request #715 Thanks agren
